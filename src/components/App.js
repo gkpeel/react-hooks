@@ -1,20 +1,15 @@
 import React from 'react';
-import styled from 'styled-components';
+import { Divider, Body } from '../util/BaseStyles';
 import Counter from './Counter';
+import { NameInput } from './NameInput';
 
-const StyledApp = styled.div`
-	max-width: 1024px;
-	margin: 0 auto;
-	font-family: Helvetica, Arial, sans-serif;
-	color: #333;
-	font-size: 1.2rem;
-`;
-
-const App = props => {
+const App = () => {
 	return (
-		<StyledApp>
+		<Body>
 			<Counter />
-		</StyledApp>
+			<Divider />
+			<NameInput />
+		</Body>
 	);
 };
 
